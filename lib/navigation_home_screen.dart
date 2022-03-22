@@ -7,7 +7,16 @@ import 'package:best_flutter_ui_templates/model/home_screen.dart';
 import 'package:best_flutter_ui_templates/model/invite_friend_screen.dart';
 import 'package:best_flutter_ui_templates/model/RectoratePage.dart';
 import 'package:best_flutter_ui_templates/model/Engineering.dart';
+import 'package:best_flutter_ui_templates/model/TechnoPark.dart';
+import 'package:best_flutter_ui_templates/model/SportScience.dart';
+import 'model/Technology.dart';
+import 'package:best_flutter_ui_templates/model/Medical.dart';
+
 import 'package:flutter/material.dart';
+
+import 'model/Businnes.dart';
+import 'model/Literature.dart';
+import 'model/Religion.dart';
 
 
 class NavigationHomeScreen extends StatefulWidget {
@@ -28,6 +37,7 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+
     return Container(
       color: AppTheme.nearlyWhite,
       child: SafeArea(
@@ -83,6 +93,46 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
           screenView = RectoratePage();
         });
 
+      }
+      else if (drawerIndex == DrawerIndex.Literature) {
+        setState(() {
+          screenView = Literature();
+        });
+
+      }
+      else if (drawerIndex == DrawerIndex.Religion) {
+        setState(() {
+          screenView = Religion();
+        });
+
+      }
+      else if (drawerIndex == DrawerIndex.Businnes) {
+        setState(() {
+          screenView = Businnes();
+        });
+
+      }
+      else if (drawerIndex == DrawerIndex.SportScience) {
+        setState(() {
+          screenView = SportScience();
+        });
+
+      }
+      else if (drawerIndex == DrawerIndex.Technology) {
+        setState(() {
+          screenView = Technology();
+        });
+
+      }
+      else if (drawerIndex == DrawerIndex.Medical) {
+        setState(() {
+          screenView = Medical();
+        });
+      }
+      else if (drawerIndex == DrawerIndex.TechnoPark) {
+        setState(() {
+          screenView = TechnoPark();
+        });
       }
 
       else {

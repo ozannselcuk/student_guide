@@ -30,11 +30,12 @@ class _SchoolMapState extends State<SchoolMap> {
 
   Widget build(BuildContext context) {
 
-
+    BitmapDescriptor myIcon;
     return Scaffold(
       body: GoogleMap(
-       
+
         myLocationButtonEnabled: true,
+
         compassEnabled: true,
         mapToolbarEnabled: true,
         buildingsEnabled: true,
@@ -72,7 +73,7 @@ class _SchoolMapState extends State<SchoolMap> {
               draggable: true,
               markerId: MarkerId("1"),
               position: LatLng(41.214035393220435, 32.65381321002365),
-              icon: await BitmapDescriptor.fromAssetImage(configuration, assetName),
+              icon: BitmapDescriptor.defaultMarker,
               infoWindow: const InfoWindow(
                 title: 'Teknoloji Fakültesi',
               ),
@@ -81,7 +82,7 @@ class _SchoolMapState extends State<SchoolMap> {
               draggable: true,
               markerId: MarkerId("1"),
               position: LatLng(41.21319602921475, 32.65418871458157),
-              icon: BitmapDescriptor.defaultMarker,
+              icon:  BitmapDescriptor.defaultMarker,
               infoWindow: const InfoWindow(
                 title: 'Sağlık Bilimleri ve İletişim Fakültesi',
               ),

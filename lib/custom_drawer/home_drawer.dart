@@ -45,46 +45,46 @@ class _HomeDrawerState extends State<HomeDrawer> {
         imageName: 'assets/images/cogwheel-setting.png',
       ),
       DrawerList(
-        index: DrawerIndex.Help,
+        index: DrawerIndex.Literature,
         labelName: 'Literature Faculty',
         isAssetsImage: true,
         imageName: 'assets/images/literature.png',
       ),
       DrawerList(
-        index: DrawerIndex.Help,
+        index: DrawerIndex.Religion,
         labelName: 'Religion Faculty',
         isAssetsImage: true,
         imageName: 'assets/images/mosque.png',
 
       ),
       DrawerList(
-        index: DrawerIndex.Help,
+        index: DrawerIndex.Businnes,
         labelName: 'Bussines Faculty',
         isAssetsImage: true,
         imageName: 'assets/images/briefcase.png',
       ),
 
       DrawerList(
-        index: DrawerIndex.Help,
+        index: DrawerIndex.SportScience,
         labelName: 'Sports Science Faculty',
         isAssetsImage: true,
         imageName: 'assets/images/running.png',
       ),
 
       DrawerList(
-        index: DrawerIndex.FeedBack,
+        index: DrawerIndex.Technology,
         labelName: 'Technology Faculty',
         isAssetsImage: true,
         imageName: 'assets/images/project-management.png',
       ),
       DrawerList(
-        index: DrawerIndex.FeedBack,
+        index: DrawerIndex.TechnoPark,
         labelName: 'Techno Park',
         isAssetsImage: true,
         imageName: 'assets/images/factory.png',
       ),
       DrawerList(
-        index: DrawerIndex.FeedBack,
+        index: DrawerIndex.Medical,
         labelName: 'Medical Faculty',
         isAssetsImage: true,
         imageName: 'assets/images/caduceus.png',
@@ -121,6 +121,8 @@ class _HomeDrawerState extends State<HomeDrawer> {
         labelName: 'About Us',
         icon: Icon(Icons.info),
       ),
+
+
     ];
   }
 
@@ -329,6 +331,13 @@ enum DrawerIndex {
   SchoolMap,
   RectoratePage,
   Engineering,
+  Literature,
+  Religion,
+  Businnes,
+  SportScience,
+  Technology,
+  Medical,
+  TechnoPark,
 }
 
 class DrawerList {
